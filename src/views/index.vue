@@ -52,6 +52,10 @@ export default {
 
 <style scoped>
 .home-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
   padding: 20px;
   text-align: center;
 }
@@ -96,4 +100,6 @@ export default {
   margin-bottom: 10px;
   color: #333;
 }
+
+
 </style>
