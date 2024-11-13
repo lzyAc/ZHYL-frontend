@@ -1,4 +1,3 @@
-<!-- src/views/Home.vue -->
 <template>
   <div class="home-container">
     <Header title="智慧养老管理平台" />
