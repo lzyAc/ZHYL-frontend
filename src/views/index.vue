@@ -30,14 +30,16 @@ import Footer from '@/components/Footer.vue';
 
 export default {
   components: {
-    Header,
+    // Header,
     Footer
   },
   data() {
     return {
       images: [
-        { id: 1, src: '/images/banner/banner01.png' },
-        { id: 2, src: '/images/banner/banner02.png' }
+        { id: 1, src: '/images/banner/banner05.png' },
+        { id: 2, src: '/images/banner/banner06.png' },
+        { id: 3, src: '/images/banner/banner01.png' },
+        { id: 4, src: '/images/banner/banner02.png' },
       ],
       announcements: [
         { id: 1, title: '关于开展秋季健康讲座的通知' },

@@ -18,7 +18,7 @@ export default {
 header {
   background-color: rgba(66, 185, 131, 0.32);
   color: white;
-  padding: 10px;
+  padding: 1px;
   text-align: center;
 }
 </style>
