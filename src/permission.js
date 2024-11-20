@@ -56,3 +56,5 @@ router.beforeEach((to, from, next) => {
 router.afterEach(() => {
   NProgress.done()
 })
+
+const Organization = () => import('@/views/InstitutionInfo/organization/index.vue');
