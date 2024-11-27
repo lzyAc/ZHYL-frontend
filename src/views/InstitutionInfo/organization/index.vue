@@ -17,54 +17,54 @@
           @keyup.enter.native="handleQuery"
         />
       </el-form-item>
-      <el-form-item label="联系电话" prop="contactPhone">
-        <el-input
-          v-model="queryParams.contactPhone"
-          placeholder="请输入联系电话"
-          clearable
-          @keyup.enter.native="handleQuery"
-        />
-      </el-form-item>
-      <el-form-item label="联系邮箱" prop="contactEmail">
-        <el-input
-          v-model="queryParams.contactEmail"
-          placeholder="请输入联系邮箱"
-          clearable
-          @keyup.enter.native="handleQuery"
-        />
-      </el-form-item>
-      <el-form-item label="创建人 ID" prop="createdBy">
-        <el-input
-          v-model="queryParams.createdBy"
-          placeholder="请输入创建人 ID"
-          clearable
-          @keyup.enter.native="handleQuery"
-        />
-      </el-form-item>
-      <el-form-item label="创建时间" prop="createdTime">
-        <el-date-picker clearable
-          v-model="queryParams.createdTime"
-          type="date"
-          value-format="yyyy-MM-dd"
-          placeholder="请选择创建时间">
-        </el-date-picker>
-      </el-form-item>
-      <el-form-item label="修改人 ID" prop="updatedBy">
-        <el-input
-          v-model="queryParams.updatedBy"
-          placeholder="请输入修改人 ID"
-          clearable
-          @keyup.enter.native="handleQuery"
-        />
-      </el-form-item>
-      <el-form-item label="修改时间" prop="updatedTime">
-        <el-date-picker clearable
-          v-model="queryParams.updatedTime"
-          type="date"
-          value-format="yyyy-MM-dd"
-          placeholder="请选择修改时间">
-        </el-date-picker>
-      </el-form-item>
+<!--      <el-form-item label="联系电话" prop="contactPhone">-->
+<!--        <el-input-->
+<!--          v-model="queryParams.contactPhone"-->
+<!--          placeholder="请输入联系电话"-->
+<!--          clearable-->
+<!--          @keyup.enter.native="handleQuery"-->
+<!--        />-->
+<!--      </el-form-item>-->
+<!--      <el-form-item label="联系邮箱" prop="contactEmail">-->
+<!--        <el-input-->
+<!--          v-model="queryParams.contactEmail"-->
+<!--          placeholder="请输入联系邮箱"-->
+<!--          clearable-->
+<!--          @keyup.enter.native="handleQuery"-->
+<!--        />-->
+<!--      </el-form-item>-->
+<!--      <el-form-item label="创建人 ID" prop="createdBy">-->
+<!--        <el-input-->
+<!--          v-model="queryParams.createdBy"-->
+<!--          placeholder="请输入创建人 ID"-->
+<!--          clearable-->
+<!--          @keyup.enter.native="handleQuery"-->
+<!--        />-->
+<!--      </el-form-item>-->
+<!--      <el-form-item label="创建时间" prop="createdTime">-->
+<!--        <el-date-picker clearable-->
+<!--          v-model="queryParams.createdTime"-->
+<!--          type="date"-->
+<!--          value-format="yyyy-MM-dd"-->
+<!--          placeholder="请选择创建时间">-->
+<!--        </el-date-picker>-->
+<!--      </el-form-item>-->
+<!--      <el-form-item label="修改人 ID" prop="updatedBy">-->
+<!--        <el-input-->
+<!--          v-model="queryParams.updatedBy"-->
+<!--          placeholder="请输入修改人 ID"-->
+<!--          clearable-->
+<!--          @keyup.enter.native="handleQuery"-->
+<!--        />-->
+<!--      </el-form-item>-->
+<!--      <el-form-item label="修改时间" prop="updatedTime">-->
+<!--        <el-date-picker clearable-->
+<!--          v-model="queryParams.updatedTime"-->
+<!--          type="date"-->
+<!--          value-format="yyyy-MM-dd"-->
+<!--          placeholder="请选择修改时间">-->
+<!--        </el-date-picker>-->
+<!--      </el-form-item>-->
       <el-form-item>
         <el-button type="primary" icon="el-icon-search" size="mini" @click="handleQuery">搜索</el-button>
         <el-button icon="el-icon-refresh" size="mini" @click="resetQuery">重置</el-button>

@@ -17,14 +17,14 @@
           @keyup.enter.native="handleQuery"
         />
       </el-form-item>
-      <el-form-item label="邮箱" prop="email">
-        <el-input
-          v-model="queryParams.email"
-          placeholder="请输入邮箱"
-          clearable
-          @keyup.enter.native="handleQuery"
-        />
-      </el-form-item>
+<!--      <el-form-item label="邮箱" prop="email">-->
+<!--        <el-input-->
+<!--          v-model="queryParams.email"-->
+<!--          placeholder="请输入邮箱"-->
+<!--          clearable-->
+<!--          @keyup.enter.native="handleQuery"-->
+<!--        />-->
+<!--      </el-form-item>-->
       <el-form-item label="机构" prop="orgId">
         <el-input
           v-model="queryParams.orgId"
@@ -41,30 +41,30 @@
           @keyup.enter.native="handleQuery"
         />
       </el-form-item>
-      <el-form-item label="入职日期" prop="hireDate">
-        <el-date-picker clearable
-          v-model="queryParams.hireDate"
-          type="date"
-          value-format="yyyy-MM-dd"
-          placeholder="请选择入职日期">
-        </el-date-picker>
-      </el-form-item>
-      <el-form-item label="创建人" prop="createdBy">
-        <el-input
-          v-model="queryParams.createdBy"
-          placeholder="创建人 ID"
-          clearable
-          @keyup.enter.native="handleQuery"
-        />
-      </el-form-item>
-      <el-form-item label="修改人" prop="updatedBy">
-        <el-input
-          v-model="queryParams.updatedBy"
-          placeholder="修改人 ID"
-          clearable
-          @keyup.enter.native="handleQuery"
-        />
-      </el-form-item>
+<!--      <el-form-item label="入职日期" prop="hireDate">-->
+<!--        <el-date-picker clearable-->
+<!--          v-model="queryParams.hireDate"-->
+<!--          type="date"-->
+<!--          value-format="yyyy-MM-dd"-->
+<!--          placeholder="请选择入职日期">-->
+<!--        </el-date-picker>-->
+<!--      </el-form-item>-->
+<!--      <el-form-item label="创建人" prop="createdBy">-->
+<!--        <el-input-->
+<!--          v-model="queryParams.createdBy"-->
+<!--          placeholder="创建人 ID"-->
+<!--          clearable-->
+<!--          @keyup.enter.native="handleQuery"-->
+<!--        />-->
+<!--      </el-form-item>-->
+<!--      <el-form-item label="修改人" prop="updatedBy">-->
+<!--        <el-input-->
+<!--          v-model="queryParams.updatedBy"-->
+<!--          placeholder="修改人 ID"-->
+<!--          clearable-->
+<!--          @keyup.enter.native="handleQuery"-->
+<!--        />-->
+<!--      </el-form-item>-->
       <el-form-item>
         <el-button type="primary" icon="el-icon-search" size="mini" @click="handleQuery">搜索</el-button>
         <el-button icon="el-icon-refresh" size="mini" @click="resetQuery">重置</el-button>
@@ -174,7 +174,7 @@
         <el-form-item label="邮箱" prop="email">
           <el-input v-model="form.email" placeholder="请输入邮箱" />
         </el-form-item>
-        <el-form-item label="所属机构ID，关联gc_organization表" prop="orgId">
+        <el-form-item label="机构ID" prop="orgId">
           <el-input v-model="form.orgId" placeholder="请输入所属机构ID，关联gc_organization表" />
         </el-form-item>
         <el-form-item label="职位" prop="position">
@@ -317,7 +317,7 @@ export default {
           { required: true, message: "邮箱不能为空", trigger: "blur" }
         ],
         orgId: [
-          { required: true, message: "所属机构ID，关联gc_organization表不能为空", trigger: "blur" }
+          { required: true, message: "所属机构ID", trigger: "blur" }
         ],
       }
     };
