@@ -58,3 +58,5 @@ router.afterEach(() => {
 })
 
 const Organization = () => import('@/views/InstitutionInfo/organization/index.vue');
+const GcElderlyInfo = () => import('@/views/gcElderlyInfo/index.vue');
+const HealthRecord = () => import('@/views/healthRecord/healthRecord/index.vue');

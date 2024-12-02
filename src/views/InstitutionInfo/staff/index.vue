@@ -121,7 +121,11 @@
       <el-table-column type="selection" width="55" align="center" />
       <el-table-column label="服务人员ID" align="center" prop="id" />
       <el-table-column label="服务人员姓名" align="center" prop="staffName" />
-      <el-table-column label="性别 (M: 男, F: 女)" align="center" prop="gender" />
+      <el-table-column label="性别" align="center" prop="gender">
+        <template slot-scope="scope">
+          <span>{{ genderMap[scope.row.gender] }}</span>
+        </template>
+      </el-table-column>
       <el-table-column label="联系电话" align="center" prop="phoneNumber" />
       <el-table-column label="邮箱" align="center" prop="email" />
       <el-table-column label="所属机构ID" align="center" prop="orgId" />
@@ -131,9 +135,13 @@
           <span>{{ parseTime(scope.row.hireDate, '{y}-{m}-{d}') }}</span>
         </template>
       </el-table-column>
-      <el-table-column label="状态 (active: 在职, inactive: 离职)" align="center" prop="status" />
-      <el-table-column label="创建人 ID" align="center" prop="createdBy" />
-      <el-table-column label="修改人 ID" align="center" prop="updatedBy" />
+      <el-table-column label="状态" align="center" prop="status">
+        <template slot-scope="scope">
+          <span>{{ statusMap[scope.row.status] }}</span>
+        </template>
+      </el-table-column>
+<!--      <el-table-column label="创建人 ID" align="center" prop="createdBy" />-->
+<!--      <el-table-column label="修改人 ID" align="center" prop="updatedBy" />-->
       <el-table-column label="操作" align="center" class-name="small-padding fixed-width">
         <template slot-scope="scope">
           <el-button
@@ -311,7 +319,7 @@ export default {
           { required: true, message: "性别 (M: 男, F: 女)不能为空", trigger: "blur" }
         ],
         phoneNumber: [
-          { required: true, message: "联系电话不能为空", trigger: "blur" }
+          { required: true, message: "联系电话  不能为空", trigger: "blur" }
         ],
         email: [
           { required: true, message: "邮箱不能为空", trigger: "blur" }
@@ -319,6 +327,14 @@ export default {
         orgId: [
           { required: true, message: "所属机构ID", trigger: "blur" }
         ],
+      },
+      genderMap: {
+        M: '男',
+        F: '女'
+      },
+      statusMap: {
+        active: '在职',
+        inactive: '离职'
       }
     };
   },

@@ -130,13 +130,13 @@
       </el-table-column>
       <el-table-column label="联系电话" align="center" prop="contactPhone" />
       <el-table-column label="联系邮箱" align="center" prop="contactEmail" />
-      <el-table-column label="创建人 ID" align="center" prop="createdBy" />
+<!--      <el-table-column label="创建人 ID" align="center" prop="createdBy" />-->
       <el-table-column label="创建时间" align="center" prop="createdTime" width="180">
         <template slot-scope="scope">
           <span>{{ parseTime(scope.row.createdTime, '{y}-{m}-{d}') }}</span>
         </template>
       </el-table-column>
-      <el-table-column label="修改人 ID" align="center" prop="updatedBy" />
+<!--      <el-table-column label="修改人 ID" align="center" prop="updatedBy" />-->
       <el-table-column label="修改时间" align="center" prop="updatedTime" width="180">
         <template slot-scope="scope">
           <span>{{ parseTime(scope.row.updatedTime, '{y}-{m}-{d}') }}</span>
@@ -191,28 +191,28 @@
         <el-form-item label="联系邮箱" prop="contactEmail">
           <el-input v-model="form.contactEmail" placeholder="请输入联系邮箱" />
         </el-form-item>
-        <el-form-item label="创建人 ID" prop="createdBy">
-          <el-input v-model="form.createdBy" placeholder="请输入创建人 ID" />
-        </el-form-item>
-        <el-form-item label="创建时间" prop="createdTime">
-          <el-date-picker clearable
-            v-model="form.createdTime"
-            type="date"
-            value-format="yyyy-MM-dd"
-            placeholder="请选择创建时间">
-          </el-date-picker>
-        </el-form-item>
-        <el-form-item label="修改人 ID" prop="updatedBy">
-          <el-input v-model="form.updatedBy" placeholder="请输入修改人 ID" />
-        </el-form-item>
-        <el-form-item label="修改时间" prop="updatedTime">
-          <el-date-picker clearable
-            v-model="form.updatedTime"
-            type="date"
-            value-format="yyyy-MM-dd"
-            placeholder="请选择修改时间">
-          </el-date-picker>
-        </el-form-item>
+<!--        <el-form-item label="创建人 ID" prop="createdBy">-->
+<!--          <el-input v-model="form.createdBy" placeholder="请输入创建人 ID" />-->
+<!--        </el-form-item>-->
+<!--        <el-form-item label="创建时间" prop="createdTime">-->
+<!--          <el-date-picker clearable-->
+<!--            v-model="form.createdTime"-->
+<!--            type="date"-->
+<!--            value-format="yyyy-MM-dd"-->
+<!--            placeholder="请选择创建时间">-->
+<!--          </el-date-picker>-->
+<!--        </el-form-item>-->
+<!--        <el-form-item label="修改人 ID" prop="updatedBy">-->
+<!--          <el-input v-model="form.updatedBy" placeholder="请输入修改人 ID" />-->
+<!--        </el-form-item>-->
+<!--        <el-form-item label="修改时间" prop="updatedTime">-->
+<!--          <el-date-picker clearable-->
+<!--            v-model="form.updatedTime"-->
+<!--            type="date"-->
+<!--            value-format="yyyy-MM-dd"-->
+<!--            placeholder="请选择修改时间">-->
+<!--          </el-date-picker>-->
+<!--        </el-form-item>-->
       </el-form>
       <div slot="footer" class="dialog-footer">
         <el-button type="primary" @click="submitForm">确 定</el-button>
